@@ -1,0 +1,7 @@
+local key = _G.Key
+local check = "https://raw.githubusercontent.com/SpacexFaker/test/main/k?key" .. key
+if game:HttpGet(check) == "Whitelisted" then
+print("WL")
+else
+game.Players.LocalPlayer:Kick("Invalid Key! Please Rejoin And Try Again.")
+end
